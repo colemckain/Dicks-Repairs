@@ -36,6 +36,24 @@ body {
   transition: color 0.3s;
   font-size: 16px;
 }
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .navigation {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-links {
+      flex-direction: row; /* Keep links in a row */
+      width: 100%; /* Full width for mobile */
+      justify-content: space-around; /* Space links evenly */
+  }
+
+  .nav-links li {
+      margin-left: 0; /* Remove left margin on mobile */
+      margin-right: 20px; /* Add right margin for spacing */
+  }
+}
 /* Hero Section */
 .hero-image {
   position: relative;
@@ -63,16 +81,12 @@ body {
   padding: 10px; /* Adjust padding for mobile */
   border-radius: 10px;
 }
-.hero-subheadline {
-  position: absolute; /* Position it absolutely within the hero image */
-  top: calc(50% + 40px); /* Position it below the hero text */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust position to be centered */
-  color: rgb(255, 255, 255); /* Text color */
-  font-size: 1em; /* Font size */
-  font-weight: normal; /* Font weight */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better readability */
-}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero-text {
+      font-size: 1.2em; /* Smaller font size for mobile */
+      padding: 10px; /* Adjust padding */
+  }
 /* Main Content Section */
 .main-container {
   max-width: 400px; /* Set a maximum width for the main container */
@@ -179,42 +193,15 @@ body {
   height: auto; /* Maintain aspect ratio */
   margin: 5px; /* Add some space around the logos */
 }
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .hero-text {
-      font-size: 1.2em; /* Smaller font size for mobile */
-      padding: 10px; /* Adjust padding */
-  }
 
-  /* Mobile Navigation */
-@media (max-width: 768px) {
-  .navigation {
-      flex-direction: column; /* Stack items vertically on small screens */
-      align-items: flex-start; /* Align items to the start */
-  }
 
-  .nav-links {
-      flex-direction: row; /* Keep links in a row */
-      width: 100%; /* Full width for mobile */
-      justify-content: space-around; /* Space links evenly */
-  }
-
-  .nav-links li {
-      margin-left: 0; /* Remove left margin on mobile */
-      margin-right: 20px; /* Add right margin for spacing */
-  }
-}
+  
 
   .device {
       max-width: 90%; /* Allow devices to take more width */
   }
-}
 
-@media (max-width: 480px) {
-  .nav-links {
-      flex-direction: column; /* Stack links vertically */
-      gap: 10px; /* Space between links */
-  }
+
 
   .hero-text {
       font-size: 1em; /* Smaller font size for mobile */
