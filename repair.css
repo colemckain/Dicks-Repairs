@@ -69,7 +69,7 @@ body {
 
 .hero-text {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -84,7 +84,7 @@ body {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .hero-text {
-      font-size: 1em; /* Smaller font size for mobile */
+      font-size: .8em; /* Smaller font size for mobile */
       padding: 10px; /* Adjust padding */
   }}
 /* Main Content Section */
@@ -174,14 +174,14 @@ body {
 
 /* Set the width of the repair-list to 75% */
 .repair-list {
-    width: 90%; /* Change width to 75% */
-    margin-top: 20px; /* Add some space between the image and the repair list */
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
+  width: 90%; /* Change width to 90% */
+  margin: center; /* Center the list */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text inside the repair list */
 }
 
 .repair-list h2 {
@@ -204,6 +204,10 @@ body {
 
 .repair-list li:last-child {
     border-bottom: none;
+}
+.repair-list img {
+  display: block; /* Make images block elements */
+  margin: 0 auto; /* Center images */
 }
 .screen-demo {
   width: 200px; /* Adjust the width as needed */
