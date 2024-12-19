@@ -61,7 +61,7 @@ body {
 }
 
 .hero-img {
-  width: 150%; /* Make the image responsive */
+  width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Ensure the image covers the area without stretching */
   max-height: 500px; /* Set a maximum height to prevent it from being too tall */
