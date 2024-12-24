@@ -1,0 +1,388 @@
+/* repair.css */
+
+/* General Styles */
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+
+/* Navigation Styles */
+.navigation {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #ffffff;
+padding: 30px 30px;
+box-shadow: #f9f9f9;
+}
+
+#logo img {
+width: 500px;
+margin-left: 40px;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+}
+
+.nav-links li {
+margin-left: 275px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: rgb(0, 0, 0);
+font-weight: 1000;
+transition: color 0.3s;
+font-size: 18px;
+}
+
+.nav-links a:hover {
+color: #FFD700;
+}
+
+
+
+/* Hero Section */
+.hero-image {
+  position: center;
+  text-align: center;
+ 
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  width: 80%;
+  position: absolute; /* Keep this if you want to position it over the hero image */
+  top: 50%; /* Adjust as needed for vertical positioning */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to be centered */
+  text-align: center; /* Center the text */
+  color: rgb(255, 255, 255); /* Text color */
+  font-size: 2em; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Optional: for better readability */
+  background-color: rgba(0, 0, 0, 0.6); /* Optional: background for contrast */
+  padding: 20px; /* Optional: padding for spacing */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+
+.hero-btn:hover {
+  transform: scale(1.1);
+  background-color: #050505;
+}
+
+.hero-btn-container {
+  position: absolute; /* Position it absolutely */
+  top: 40%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to be centered */
+  text-align: center; /* Center text inside the container */
+}
+
+.hero-btn {
+  display: inline-block; /* Make it an inline block for padding */
+  padding: 10px 20px; /* Add padding for size */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Make the text bold */
+  color: white; /* Text color */
+  background-color: #9b6329; /* Background color */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s, background-color 0.3s; /* Add transition for hover effects */
+}
+
+.hero-btn:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+  background-color: #ac8958; /* Change background color on hover */
+}
+
+/* General Container Styles */
+
+
+.container {
+  position: relative; /* Set position to relative to create a positioning context */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;;
+}
+
+
+
+  
+.container-a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.container h1, .container h2 {
+  margin-bottom: 16px;
+}
+
+.container-a {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+  margin-left: 300px;
+  background-color: rgba(255, 255, 255, 0.078); /* Optional: background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin-right: 10px;
+  
+}
+
+
+.main-container {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: stretch; /* Align items to the top */
+  margin: 20px; /* Optional: Add some margin for spacing */
+}
+.image-container {
+  width: 70%;
+}
+
+.side-image {
+  
+}
+
+.text-container {
+  flex: 2; /* Allow the text container to take up more space */
+}
+/* Section Styles */
+.section {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.headings h1 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.paragraphs p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Device List */
+.device-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: auto;
+  gap: 20px;
+}
+
+.device {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.device img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(239, 237, 237, 0.1);
+}
+
+.device:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.device-box {
+  height: 300px;
+  background-color: #f9f9f9; /* Light background color for the box */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Space inside the box */
+  text-align: center; /* Center text and images */
+  margin: 20px; /* Space between boxes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+.device-box:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Website Creation Section */
+#website-creation {
+  margin: 20px;
+  text-align: center; /* Center the text */
+  margin-top: 20px;
+  border: 1px solid #070707;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.5em; /* Increase the font size (adjust as needed) */
+  font-weight: bold; /* Make the text bold */
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 50%;
+  margin: 20px;
+}
+#website-creation .mySlides img {
+  width: 100%; /* Adjust this value to make the images smaller or larger */
+  max-width: 1000px; /* Set a maximum width if needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#website-creation img {
+  width: 100%; /* Adjust this percentage to make the image smaller */
+  max-width: 1000px; /* Set a maximum width if needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Images Section */
+.images {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.images h2 {
+  margin-bottom: 80px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#img-a {
+  width: 100px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+
+.side-image {
+  width: 100%; /* Make the image responsive */
+    max-width: 300px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Social Media Links */
+#instagram-link {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#instagram-link img {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+}
+
+#instagram-link a {
+  text-decoration: none;
+  color: #333;
+}
+
+#instagram-link a:hover {
+  color: #555;
+}
+
+.tiktok-embed {
+  margin: 10px;
+  flex: 1 1 30%;
+  max-width: 300px;
+}
+
+.text-box {
+  margin: 10px;
+  text-align: center;
+  flex: 1 1 30%;
+  max-width: 300px;
+}
+
+.logo-tag {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Subheadings */
+.subheadings h3 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+
+
+/* Contact Information Section Styles */
+#contact-info {
+  padding: 40px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#contact-info h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.map-container {
+  width: 100px;
+  float: center;
+  position: relative;
+}
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #ccc;
+  background-color: #000000;
+  padding: 10px 0;
+}
+
+footer a {
+  color: #FFD700;
+  text-decoration: none;
+  margin: 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+/* Set a consistent font size for all text elements */
+h1, h2, h3, p {
+  font-size: 16px; /* Set a consistent font size */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin: 10px 0; /* Add some margin for spacing */
+}
+
+/* Navigation Styles */
+.navigation {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5px 10px; /* Reduced padding for a smaller nav */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap; /* Allow links to wrap */
+  justify-content: center; /* Center the links */
+}
+
+.nav-links li {
+  margin: 0 5px; /* Reduced margin for better fit */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 600; /* Slightly lighter font weight */
+  transition: color 0.3s;
+  font-size: 12px; /* Smaller font size for mobile */
+  padding: 5px 10px; /* Add some padding for touch targets */
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+.nav-links a:hover {
+  background-color: #f0f0f0; /* Light background on hover for better visibility */
+}
+/* Navigation Icon Styles */
+.nav-icon {
+  width: 20px; /* Set a small width for the icon */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Space between the icon and text */
+  vertical-align: middle; /* Align the icon vertically with the text */
+}
+
+/* Hero Section */
+.hero-image {
+  position: relative;
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+  max-height: 500px; /* Set a maximum height to prevent it from being too tall */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em; /* Adjust font size for mobile */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px; /* Adjust padding for mobile */
+  border-radius: 10px;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero-text {
+      font-size: 1.2em; /* Smaller font size for mobile */
+      padding: 10px; /* Adjust padding */
+  }
+/* Main Content Section */
+.main-container {
+  max-width: 400px; /* Set a maximum width for the main container */
+  margin: 0 auto; /* Center the container */
+  padding: 10px; /* Reduced padding for smaller containers */
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+}
+
+.image-container {
+  margin-bottom: 20px; /* Add space below the image */
+  text-align: center; /* Center text inside the image container */
+}
+
+.image-container img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 200px; /* Set a maximum width for the side image */
+}
+
+.container {
+  max-width: 300px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 10px; /* Reduced padding for smaller containers */
+  text-align: center; /* Center text */
+}
+
+.container h1 {
+  font-size: 1.2em; /* Smaller font size for the main heading */
+}
+
+.container h2 {
+  font-size: 1em; /* Smaller font size for subheadings */
+}
+
+.container p {
+  font-size: 0.8em; /* Smaller font size for paragraphs */
+  line-height: 1.2; /* Adjust line height for better readability */
+}
+.container-a {
+  max-width: 300px; /* Set a maximum width for the container */
+  margin: 20px auto; /* Center the container horizontally and add vertical spacing */
+  padding: 10px; /* Optional: Add some padding */
+  background-color: rgba(255, 255, 255, 0.9); /* Optional: Background color */
+  border-radius: 8px; /* Optional: Rounded corners */
+  text-align: center; /* Center text inside the container */
+}
+.device-list {
+  display: flex;
+  justify-content: center; /* Center the device boxes */
+  flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+  gap: 15px; /* Space between device boxes */
+}
+
+.device {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 150px; /* Set a maximum width for the device boxes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.device-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px; /* Reduce padding for smaller boxes */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.device-box img {
+  width: 100%; /* Make the image responsive and smaller */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 120px; /* Set a maximum width for the images */
+  margin-bottom: 10px; /* Add space below the image */
+}
+
+.device-box:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+
+.images {
+  max-width: 600px; /* Set a maximum width for the images section */
+  margin: 20px auto; /* Center the container horizontally and add vertical spacing */
+  text-align: center; /* Center text inside the container */
+}
+
+.image-gallery {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+}
+
+.text-box {
+  margin-top: 20px; /* Add space above the text box */
+}
+/* Logo Styles */
+.logo-tag {
+  width: 50px; /* Set a smaller width for the logos */
+  height: auto; /* Maintain aspect ratio */
+  margin: 5px; /* Add some space around the logos */
+}
+
+
+  
+
+  .device {
+      max-width: 90%; /* Allow devices to take more width */
+  }
+
+
+
+  .hero-text {
+      font-size: 1em; /* Smaller font size for mobile */
+  }
+
+  .container {
+      padding: 5px; /* Adjust padding */
+  }
+}

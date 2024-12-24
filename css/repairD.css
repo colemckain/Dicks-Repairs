@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Styles */
+  .navigation {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items vertically */
+    background-color: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex; /* Keep links in a row */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav-links li {
+    margin-left: 20px; /* Space between links */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    transition: color 0.3s;
+    font-size: 16px;
+  }
+  /* Mobile Navigation */
+  @media (max-width: 768px) {
+    .navigation {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+  
+    .nav-links {
+        flex-direction: row; /* Keep links in a row */
+        width: 100%; /* Full width for mobile */
+        justify-content: space-around; /* Space links evenly */
+    }
+  
+    .nav-links li {
+        margin-left: 0; /* Remove left margin on mobile */
+        margin-right: 20px; /* Add right margin for spacing */
+    }
+  }
+  /* Hero Section */
+  .hero-image {
+    position: relative;
+    text-align: center;
+  }
+  
+  
+  .hero-img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Set a maximum height for mobile */
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em; /* Adjust font size for mobile */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px; /* Adjust padding for mobile */
+    border-radius: 10px;
+  }
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .hero-text {
+        font-size: .8em; /* Smaller font size for mobile */
+        padding: 10px; /* Adjust padding */
+    }}
+  /* Main Content Section */
+  .main-container {
+      display: flex; /* Use Flexbox for layout */
+      padding: 20px 40px;
+      margin-left: 50px; /* Increase this value to move the entire container to the right */
+  }
+  
+  .image-container {
+      margin-bottom: 10px;
+      text-align: center; /* Center text inside the image container */
+  }
+  /* Main Content Section */
+  .image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Set a maximum width for the side image */
+  }
+  
+  /* Adjust the screen demo image */
+  .screen-demo {
+    width: 100%; /* Make the screen demo image responsive */
+    max-width: 150px; /* Set a maximum width for the screen demo image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .image-container h2 {
+      font-family: 'Crimson Pro', serif;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000000;
+  }
+  
+  .device-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+  }
+  
+  .device-card {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .device-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .device-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+  }
+  
+  .device-card .device-info {
+      padding: 15px;
+  }
+  
+  .device-card .device-info h3 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: #333;
+  }
+  
+  .device-card .device-info p {
+      font-size: 0.9rem;
+      color: #666;
+  }
+  
+  /* Repair List Section */
+  /* Adjust the main-container to have a column layout */
+  .main-container {
+      display: flex;
+      flex-direction: column; /* Change to column layout */
+      align-items: center; /* Center the content */
+      padding: 20px 40px;
+  }
+  
+  /* Set the width of the repair-list to 75% */
+  .repair-list {
+    width: 90%; /* Change width to 90% */
+    margin: center; /* Center the list */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text inside the repair list */
+  }
+  
+  .repair-list h2 {
+      font-family: 'Chakra Petch', serif;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #000000;
+  }
+  
+  .repair-list ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .repair-list li {
+      padding: 10px 0;
+      font-size: 1rem;
+      border-bottom: 1px solid #eee;
+  }
+  
+  .repair-list li:last-child {
+      border-bottom: none;
+  }
+  .repair-list img {
+    display: block; /* Make images block elements */
+    margin: 0 auto; /* Center images */
+  }
+  .screen-demo {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    float: right; /* Float the image to the right */
+    margin-left: 100px; /* Add some space between the image and the text */
+    margin-top: -20px; /* Adjust this value to move the image higher */
+    margin-bottom: 20px; /* Optional: add some space below the image */
+  }
+  
+  /* Contact Information Section Styles */
+  #contact-info {
+    padding: 40px;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  #contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  /* Footer Section */
+  footer {
+      background-color: #f8f9fa;
+      color: #666;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 2px solid #000000;
+  }
+  
+  footer p {
+      margin: 0;
+  }
+  
