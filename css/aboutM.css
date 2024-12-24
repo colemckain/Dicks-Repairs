@@ -8,51 +8,54 @@ body {
     color: #000000;
     line-height: 1.6;
   }
-  
+  /* Set a consistent font size for all text elements */
+h1, h2, h3, p {
+    font-size: 16px; /* Set a consistent font size */
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin: 10px 0; /* Add some margin for spacing */
+  }
   /* Navigation Styles */
-  .navigation {
+.navigation {
     display: flex;
-    justify-content: space-between; /* Space between logo and links */
-    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
-    padding: 15px 20px;
+    padding: 5px 10px; /* Reduced padding for a smaller nav */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .nav-links {
     list-style: none;
-    display: flex; /* Keep links in a row */
-    padding: 0; /* Remove default padding */
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap; /* Allow links to wrap */
+    justify-content: center; /* Center the links */
   }
   
   .nav-links li {
-    margin-left: 20px; /* Space between links */
+    margin: 0 5px; /* Reduced margin for better fit */
   }
   
   .nav-links a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-weight: 700;
+    font-weight: 600; /* Slightly lighter font weight */
     transition: color 0.3s;
-    font-size: 16px;
+    font-size: 12px; /* Smaller font size for mobile */
+    padding: 5px 10px; /* Add some padding for touch targets */
+    border-radius: 5px; /* Rounded corners for links */
   }
-  /* Mobile Navigation */
-@media (max-width: 768px) {
-    .navigation {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: flex-start; /* Align items to the start */
-    }
   
-    .nav-links {
-        flex-direction: row; /* Keep links in a row */
-        width: 100%; /* Full width for mobile */
-        justify-content: space-around; /* Space links evenly */
-    }
-  
-    .nav-links li {
-        margin-left: 0; /* Remove left margin on mobile */
-        margin-right: 20px; /* Add right margin for spacing */
-    }
+  .nav-links a:hover {
+    background-color: #f0f0f0; /* Light background on hover for better visibility */
+  }
+  /* Navigation Icon Styles */
+  .nav-icon {
+    width: 20px; /* Set a small width for the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Space between the icon and text */
+    vertical-align: middle; /* Align the icon vertically with the text */
   }
   
 /* About Section Styles */
