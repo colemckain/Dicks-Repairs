@@ -47,7 +47,13 @@ font-size: 18px;
 .nav-links a:hover {
 color: #FFD700;
 }
-
+/* Navigation Icon Styles */
+.nav-icon {
+  width: 20px; /* Set a small width for the icon */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Space between the icon and text */
+  vertical-align: middle; /* Align the icon vertically with the text */
+}
 
 
 /* Hero Section */
