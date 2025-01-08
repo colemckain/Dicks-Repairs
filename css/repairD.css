@@ -10,7 +10,7 @@ body {
 }
 /* Set a consistent font size for all text elements */
 h1, h2, h3, p {
-  font-size: 20px; /* Set a consistent font size */
+  font-size: 16px; /* Set a consistent font size */
   line-height: 1.5; /* Adjust line height for better readability */
   margin: 10px 0; /* Add some margin for spacing */
 }
@@ -61,7 +61,6 @@ h1, h2, h3, p {
   vertical-align: middle; /* Align the icon vertically with the text */
 }
 
-  
   /* Hero Section */
   .hero-image {
     position: relative;
@@ -71,8 +70,8 @@ h1, h2, h3, p {
   
   .hero-img {
     width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 300px; /* Set a maximum height for mobile */
+    height: 60%; /* Maintain aspect ratio */
+   
   }
   
   .hero-text {
@@ -180,52 +179,61 @@ h1, h2, h3, p {
       padding: 20px 40px;
   }
   
-  /* Set the width of the repair-list to 75% */
-  .repair-list {
-    width: 90%; /* Change width to 90% */
-    margin: center; /* Center the list */
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center text inside the repair list */
-  }
-  
-  .repair-list h2 {
-      font-family: 'Chakra Petch', serif;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: #000000;
-  }
-  
-  .repair-list ul {
-      list-style: none;
-      padding: 0;
-  }
-  
-  .repair-list li {
-      padding: 10px 0;
-      font-size: 1rem;
-      border-bottom: 1px solid #eee;
-  }
-  
-  .repair-list li:last-child {
-      border-bottom: none;
-  }
-  .repair-list img {
-    display: block; /* Make images block elements */
-    margin: 0 auto; /* Center images */
-  }
-  .screen-demo {
-    width: 200px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    float: right; /* Float the image to the right */
-    margin-left: 100px; /* Add some space between the image and the text */
-    margin-top: -20px; /* Adjust this value to move the image higher */
-    margin-bottom: 20px; /* Optional: add some space below the image */
-  }
-  
+  /* Repair List Container */
+.repair-list {
+  width: 90%; /* Set the width of the repair list */
+  margin: auto; /* Center the list */
+  padding: 40px; /* Increase padding for more space inside */
+  background-color: #ffffff; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #ddd; /* Border styling */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  text-align: center; /* Center text inside the repair list */
+}
+
+/* Title Styles */
+.repair-list h2 {
+  font-family: 'Chakra Petch', serif; /* Font family */
+  font-size: 1.8rem; /* Font size */
+  margin-bottom: 20px; /* Space below the title */
+  color: #000000; /* Text color */
+}
+
+/* Repair Item Styles */
+.repair-item {
+  margin-bottom: 30px; /* Space between each repair item */
+}
+
+/* List Styles */
+.repair-list ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.repair-list li {
+  padding: 10px 0; /* Space inside each list item */
+  font-size: 1rem; /* Font size for list items */
+  border-bottom: 1px solid #eee; /* Bottom border for separation */
+}
+
+.repair-list li:last-child {
+  border-bottom: none; /* Remove bottom border for the last item */
+}
+
+/* Image Styles */
+.repair-list img {
+  display: block; /* Make images block elements */
+  margin: 0 auto; /* Center images */
+}
+
+.screen-demo {
+  width: 200px; /* Set width for screen demo images */
+  height: auto; /* Maintain aspect ratio */
+  float: right; /* Float the image to the right */
+  margin-left: 100px; /* Space between the image and text */
+  margin-top: -20px; /* Adjust vertical position */
+  margin-bottom: 20px; /* Space below the image */
+}
   /* Contact Information Section Styles */
   #contact-info {
     padding: 40px;
