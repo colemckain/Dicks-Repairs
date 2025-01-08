@@ -112,6 +112,15 @@ h1, h2, h3, p {
     font-size: 0.9em;
 }
 
+/* Styling for the Team Image */
+.team-image {
+    max-width: 100%; /* Prevents the image from exceeding the container width */
+    width: 300px; /* Fixed width for all screen sizes */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 20px auto; /* Centers the image and adds vertical spacing */
+    border-radius: 10px; /* Adds subtle rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for depth */
+}
 /* Testimonials Section Styles */
 #testimonials {
     padding: 40px;
