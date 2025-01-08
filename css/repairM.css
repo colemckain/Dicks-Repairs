@@ -1,63 +1,63 @@
 /* General Styles */
 body {
-    font-family: 'Chakra Petch', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    color: #000000;
-    line-height: 1.6;
-  }
-  /* Set a consistent font size for all text elements */
+  font-family: 'Chakra Petch', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+/* Set a consistent font size for all text elements */
 h1, h2, h3, p {
-    font-size: 16px; /* Set a consistent font size */
-    line-height: 1.5; /* Adjust line height for better readability */
-    margin: 10px 0; /* Add some margin for spacing */
-  }
-  /* Navigation Styles */
+  font-size: 16px; /* Set a consistent font size */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin: 10px 0; /* Add some margin for spacing */
+}
+/* Navigation Styles */
 .navigation {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 5px 10px; /* Reduced padding for a smaller nav */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    flex-wrap: wrap; /* Allow links to wrap */
-    justify-content: center; /* Center the links */
-  }
-  
-  .nav-links li {
-    margin: 0 5px; /* Reduced margin for better fit */
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: 600; /* Slightly lighter font weight */
-    transition: color 0.3s;
-    font-size: 12px; /* Smaller font size for mobile */
-    padding: 5px 10px; /* Add some padding for touch targets */
-    border-radius: 5px; /* Rounded corners for links */
-  }
-  
-  .nav-links a:hover {
-    background-color: #f0f0f0; /* Light background on hover for better visibility */
-  }
-  /* Navigation Icon Styles */
-  .nav-icon {
-    width: 20px; /* Set a small width for the icon */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 5px; /* Space between the icon and text */
-    vertical-align: middle; /* Align the icon vertically with the text */
-  }
-  
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5px 10px; /* Reduced padding for a smaller nav */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap; /* Allow links to wrap */
+  justify-content: center; /* Center the links */
+}
+
+.nav-links li {
+  margin: 0 5px; /* Reduced margin for better fit */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 600; /* Slightly lighter font weight */
+  transition: color 0.3s;
+  font-size: 12px; /* Smaller font size for mobile */
+  padding: 5px 10px; /* Add some padding for touch targets */
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+.nav-links a:hover {
+  background-color: #f0f0f0; /* Light background on hover for better visibility */
+}
+/* Navigation Icon Styles */
+.nav-icon {
+  width: 20px; /* Set a small width for the icon */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Space between the icon and text */
+  vertical-align: middle; /* Align the icon vertically with the text */
+}
+
 /* Hero Section */
 .hero-image {
   position: relative;
@@ -112,7 +112,7 @@ h1, h2, h3, p {
 /* Adjust the screen demo image */
 .screen-demo {
   width: 100%; /* Make the screen demo image responsive */
-  max-width: 150px; /* Set a maximum width for the screen demo image */
+  max-width: 100px; /* Set a maximum width for the screen demo image */
   height: auto; /* Maintain aspect ratio */
 }
 .image-container h2 {
@@ -182,26 +182,21 @@ h1, h2, h3, p {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-/* Repair List Section */
+  
 .repair-list {
-  max-width: 600px; /* Set a maximum width for the repair list */
-  width: 90%; /* Set width for the repair list */
-  margin: 40px auto; /* Center the list with top/bottom margin */
+  background-color: #f9f9f9;
   padding: 20px;
-  background-color: #f9f9f9; /* Light background color */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  text-align: center; /* Center text inside the repair list */
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .repair-list h2 {
-  font-family: 'Chakra Petch', serif;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #000000;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
 }
 
-/* Individual Repair Item Styles */
 .repair-item {
   border: 1px solid #ddd; /* Light border around each item */
   border-radius: 8px; /* Rounded corners */
@@ -212,21 +207,82 @@ h1, h2, h3, p {
 }
 
 .repair-item h3 {
-  font-size: 1.5rem; /* Font size for repair titles */
-  margin-bottom: 10px; /* Space below the title */
-}
-
-.repair-item img {
-  width: 100%; /* Make the image responsive */
-  max-width: 100px; /* Set a maximum width for the images */
-  height: auto; /* Maintain aspect ratio */
-  margin: 10px 0; /* Space above and below the image */
+  font-size: 1.5em;
+  color: #007BFF;
+  margin-top: 15px;
 }
 
 .repair-item p {
-  font-size: 14px; /* Consistent font size for descriptions */
-  line-height: 1.5; /* Adjust line height for readability */
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
+
+.repair-item .screen-demo {
+  max-width: 115%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.repair-item .screen-demo {
+max-width: 250px; /* Set a max width for images */
+height: auto;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.screen-demo {
+width: 200px; /* Set width for screen demo images */
+height: auto; /* Maintain aspect ratio */
+float: right; /* Float the image to the right */
+margin-left: 100px; /* Space between the image and text */
+margin-top: -20px; /* Adjust vertical position */
+margin-bottom: 20px; /* Space below the image */
+}
+
+
+.screen-knowledge {
+background-color: #f9f9f9;
+padding: 20px;
+margin: 20px 0;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.screen-knowledge h2 {
+font-size: 2em;
+color: #333;
+margin-bottom: 15px;
+}
+
+.screen-knowledge h3 {
+font-size: 1.5em;
+color: #007BFF;
+margin-top: 20px;
+}
+
+.screen-knowledge p {
+font-size: 1em;
+color: #555;
+line-height: 1.6;
+margin-bottom: 10px;
+}
+
+.screen-knowledge strong {
+font-weight: bold;
+color: #000;
+}
+
+.screen-knowledge ul {
+list-style-type: square;
+padding-left: 20px;
+}
+
+
 .screen-demo {
   width: 200px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
@@ -235,7 +291,12 @@ h1, h2, h3, p {
   margin-top: -20px; /* Adjust this value to move the image higher */
   margin-bottom: 20px; /* Optional: add some space below the image */
 }
-
+.repair-item .screen-demo {
+  max-width: 200px; /* Set a max width for images */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 /* Contact Information Section Styles */
 #contact-info {
   padding: 40px;
