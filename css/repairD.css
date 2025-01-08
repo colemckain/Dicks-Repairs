@@ -1,54 +1,58 @@
 /* General Styles */
 body {
-    font-family: 'Chakra Petch', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    color: #000000;
-    line-height: 1.6;
-  }
-  
-  /* Navigation Styles */
-  .navigation {
-    display: flex;
-    justify-content: space-between; /* Space between logo and links */
-    align-items: center; /* Center items vertically */
-    background-color: #ffffff;
-    padding: 15px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex; /* Keep links in a row */
-    padding: 0; /* Remove default padding */
-  }
-  
-  .nav-links li {
-    margin-left: 20px; /* Space between links */
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    transition: color 0.3s;
-    font-size: 16px;
-  }
-  
-  
-    .nav-links {
-        flex-direction: row; /* Keep links in a row */
-        width: 100%; /* Full width for mobile */
-        justify-content: space-around; /* Space links evenly */
-    }
-  
-    .nav-links li {
-        margin-left: 0; /* Remove left margin on mobile */
-        margin-right: 20px; /* Add right margin for spacing */
-    }
-  }
+  font-family: 'Chakra Petch', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+/* Set a consistent font size for all text elements */
+h1, h2, h3, p {
+  font-size: 20px; /* Set a consistent font size */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin: 10px 0; /* Add some margin for spacing */
+}
+/* Navigation Styles */
+.navigation {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 20px; /* Increased padding for a larger nav */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap; /* Allow links to wrap */
+  justify-content: center; /* Center the links */
+  gap: 250px; /* Add more space between links */
+}
+
+.nav-links li {
+  margin: 0; /* Adjust spacing if necessary */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold; /* Slightly bolder font for better visibility */
+  font-size: 16px; /* Larger font size */
+  padding: 10px 20px; /* Add more padding for a bigger clickable area */
+  border-radius: 8px; /* Rounded corners for links */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #f0f0f0; /* Light background on hover for better visibility */
+  color: #333333; /* Slightly darker color on hover */
+}
+
 /* Navigation Icon Styles */
 .nav-icon {
   width: 30px; /* Increased width for larger icons */
@@ -56,6 +60,7 @@ body {
   margin-right: 10px; /* Space between the icon and text */
   vertical-align: middle; /* Align the icon vertically with the text */
 }
+
   /* Hero Section */
   .hero-image {
     position: relative;
