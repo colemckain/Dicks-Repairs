@@ -112,12 +112,7 @@ h1, h2, h3, p {
     max-width: 150px; /* Set a maximum width for the side image */
   }
   
-  /* Adjust the screen demo image */
-  .screen-demo {
-    width: 100%; /* Make the screen demo image responsive */
-    max-width: 150px; /* Set a maximum width for the screen demo image */
-    height: auto; /* Maintain aspect ratio */
-  }
+
   .image-container h2 {
       font-family: 'Crimson Pro', serif;
       font-size: 1.8rem;
@@ -179,61 +174,100 @@ h1, h2, h3, p {
       padding: 20px 40px;
   }
   
-  /* Repair List Container */
-.repair-list {
-  width: 90%; /* Set the width of the repair list */
-  margin: auto; /* Center the list */
-  padding: 40px; /* Increase padding for more space inside */
-  background-color: #ffffff; /* Background color */
-  border-radius: 10px; /* Rounded corners */
-  border: 1px solid #ddd; /* Border styling */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  text-align: center; /* Center text inside the repair list */
+  .repair-list {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Title Styles */
 .repair-list h2 {
-  font-family: 'Chakra Petch', serif; /* Font family */
-  font-size: 1.8rem; /* Font size */
-  margin-bottom: 20px; /* Space below the title */
-  color: #000000; /* Text color */
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
 }
 
-/* Repair Item Styles */
 .repair-item {
-  margin-bottom: 30px; /* Space between each repair item */
+  border: 1px solid #ddd; /* Light border around each item */
+  border-radius: 8px; /* Rounded corners */
+  padding: 35px; /* Padding inside each item */
+  margin-bottom: 20px; /* Space between items */
+  background-color: #ffffff; /* White background for each item */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  
 }
 
-/* List Styles */
-.repair-list ul {
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove padding */
+.repair-item h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-top: 15px;
 }
 
-.repair-list li {
-  padding: 10px 0; /* Space inside each list item */
-  font-size: 1rem; /* Font size for list items */
-  border-bottom: 1px solid #eee; /* Bottom border for separation */
+.repair-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-.repair-list li:last-child {
-  border-bottom: none; /* Remove bottom border for the last item */
-}
 
-/* Image Styles */
-.repair-list img {
-  display: block; /* Make images block elements */
-  margin: 0 auto; /* Center images */
+.repair-item .screen-demo {
+  max-width: 100px; /* Set a max width for images */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .screen-demo {
   width: 200px; /* Set width for screen demo images */
   height: auto; /* Maintain aspect ratio */
   float: right; /* Float the image to the right */
-  margin-left: 100px; /* Space between the image and text */
-  margin-top: -20px; /* Adjust vertical position */
+  margin-left: 40px; /* Space between the image and text */
+  margin-top: -30px; /* Adjust vertical position */
   margin-bottom: 20px; /* Space below the image */
 }
+
+
+.screen-knowledge {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.screen-knowledge h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.screen-knowledge h3 {
+  font-size: 1.5em;
+  color: #007BFF;
+  margin-top: 20px;
+}
+
+.screen-knowledge p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.screen-knowledge strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.screen-knowledge ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+
+
   /* Contact Information Section Styles */
   #contact-info {
     padding: 40px;
