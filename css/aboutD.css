@@ -1,66 +1,66 @@
 /* General Styles */
 body {
-  font-family: 'Chakra Petch', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  color: #000000;
-  line-height: 1.6;
-}
-/* Set a consistent font size for all text elements */
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+  }
+  /* Set a consistent font size for all text elements */
 h1, h2, h3, p {
-  font-size: 20px; /* Set a consistent font size */
-  line-height: 1.5; /* Adjust line height for better readability */
-  margin: 10px 0; /* Add some margin for spacing */
-}
+    font-size: 16px; /* Set a consistent font size */
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin: 10px 0; /* Add some margin for spacing */
+  }
 /* Navigation Styles */
 .navigation {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 15px 20px; /* Increased padding for a larger nav */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  flex-wrap: wrap; /* Allow links to wrap */
-  justify-content: center; /* Center the links */
-  gap: 250px; /* Add more space between links */
-}
-
-.nav-links li {
-  margin: 0; /* Adjust spacing if necessary */
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-weight: bold; /* Slightly bolder font for better visibility */
-  font-size: 16px; /* Larger font size */
-  padding: 10px 20px; /* Add more padding for a bigger clickable area */
-  border-radius: 8px; /* Rounded corners for links */
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.nav-links a:hover {
-  background-color: #f0f0f0; /* Light background on hover for better visibility */
-  color: #333333; /* Slightly darker color on hover */
-}
-
-/* Navigation Icon Styles */
-.nav-icon {
-  width: 30px; /* Increased width for larger icons */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Space between the icon and text */
-  vertical-align: middle; /* Align the icon vertically with the text */
-}
-
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 20px; /* Increased padding for a larger nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap; /* Allow links to wrap */
+    justify-content: center; /* Center the links */
+    gap: 250px; /* Add more space between links */
+  }
+  
+  .nav-links li {
+    margin: 0; /* Adjust spacing if necessary */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold; /* Slightly bolder font for better visibility */
+    font-size: 16px; /* Larger font size */
+    padding: 10px 20px; /* Add more padding for a bigger clickable area */
+    border-radius: 8px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #f0f0f0; /* Light background on hover for better visibility */
+    color: #333333; /* Slightly darker color on hover */
+  }
+  
+  /* Navigation Icon Styles */
+  .nav-icon {
+    width: 30px; /* Increased width for larger icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the icon and text */
+    vertical-align: middle; /* Align the icon vertically with the text */
+  }
+  
   
 /* About Section Styles */
 #about {
@@ -114,6 +114,15 @@ h1, h2, h3, p {
 
 .team-member p {
     font-size: 0.9em;
+}
+/* Styling for the Team Image */
+.team-image {
+    max-width: 100%; /* Prevents the image from exceeding the container width */
+    width: 300px; /* Fixed width for all screen sizes */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 20px auto; /* Centers the image and adds vertical spacing */
+    border-radius: 10px; /* Adds subtle rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for depth */
 }
 
 /* Testimonials Section Styles */
